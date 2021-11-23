@@ -22,19 +22,11 @@ function renderTable() {
 }
 
 Rendertemplate = (templateText, data) => {
-  for (let i = 0; i < 10; i++) {
-    let fisrtBraces = templateText.search("{{");
-    let lastBraces = templateText.search("}}");
-    let propertyWithBreaces = templateText.slice(fisrtBraces, lastBraces + 2);
-    let property = templateText.slice(fisrtBraces + 2, lastBraces);
-    let propertyData = data[property];
-    let editTemplateText = templateText.replace(
-      propertyWithBreaces,
-      propertyData
-    );
-    let orignalTemplateText = templateText;
-    templateText = editTemplateText;
-    orignalTemplateText = editTemplateText;
-  }
-  return templateText;
+  let placeholderRegex = /{{[^\"\}]+}}/g;
+  let newMatchRegex = /{{|}}|\|\w+/g;
+
+  return templateText.replace(placeholderRegex, (match) => {
+    let newMatch = match.replace(newMatchRegex, "");
+    return data[newMatch];
+  });
 };

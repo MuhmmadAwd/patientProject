@@ -4,24 +4,28 @@ body {
 .sidebar {
   width: 15%;
   background-color: #000;
+  height: 100%;
+  position: fixed;
 }
 .sidebar .sidebar-list {
-  position: fixed;
   list-style-type: none;
   top: 10%;
+  width: 100%;
+  height: 100%;
 }
-.sidebar .sidebar-text {
+
+.sidebar .sidebar-link {
   text-decoration: none;
   color: #fff;
   display: block;
   margin: 20px 0;
 }
-.sidebar .sidebar-text:hover {
+.sidebar .sidebar-link:hover {
   color: #aaa;
 }
 .content-Container {
-  width: 85%;
-  margin: 0 10px;
+  width: 100%;
+  margin: 0 10px 0 16%;
 }
 .add-btn {
   margin: 10px;

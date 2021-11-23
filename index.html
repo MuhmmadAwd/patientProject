@@ -60,6 +60,25 @@
           </thead>
           <tbody class="patient-list-body"></tbody>
         </table>
+        <template id="patient-list-template">
+          <tr class="table-row">
+            <td class="patient-id" data-id="{{ID}}">{{ID}}</td>
+            <td class="patient-name">{{fname}} {{mname}} {{lname}}</td>
+            <td class="patient-email">{{email}}</td>
+            <td class="patient-gender">{{gender}}</td>
+            <td class="patient-DOB">{{DOB}}</td>
+            <td class="patient-Active">{{Active}}</td>
+            <td class="patient-creationDate">{{creationDate}}</td>
+            <td class="patient-Edit-btn">
+              <button
+                class="btn btn-primary patient-EditBtn router-link"
+                data-component=".patient-edit"
+              >
+                Edit
+              </button>
+            </td>
+          </tr>
+        </template>
       </div>
 
       <!--=======  End of patient-list  ========-->

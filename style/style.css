@@ -1,0 +1,30 @@
+body {
+  display: flex;
+}
+.sidebar {
+  width: 15%;
+  background-color: #000;
+}
+.sidebar .sidebar-list {
+  position: fixed;
+  list-style-type: none;
+  top: 10%;
+}
+.sidebar .sidebar-text {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin: 20px 0;
+}
+.sidebar .sidebar-text:hover {
+  color: #aaa;
+}
+.content-Container {
+  width: 85%;
+  margin: 0 10px;
+}
+.add-btn {
+  margin: 10px;
+  position: relative;
+  left: 93%;
+}

@@ -5,6 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>patientProject</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./app-module/bootstrap/bootstrap.min.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="sidebar">
+      <ul class="sidebar-list">
+        <li class="sidebar-item">
+          <a class="sidebar-text" href="#patients">Patients</a>
+        </li>
+        <li class="sidebar-item">
+          <a class="sidebar-text" href="#users">Users</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content-Container">
+      <div class="patient-list" id="patients">
+        <h1 class="title">patient list</h1>
+        <button class="btn btn-info add-btn">add</button>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">gender</th>
+              <th scope="col">DOB</th>
+              <th scope="col">Active</th>
+              <th scope="col">Creation</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody class="patient-list-body">
+            <tr class="table-success">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr class="table-danger">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr class="table-light">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="patient-edit">
+        <h1 class="title">patient edit</h1>
+        <div class="actions-btn m-2 p-2">
+          <button type="button" class="btn btn-primary px-3">save</button>
+          <button type="button" class="btn btn-danger">cancel</button>
+        </div>
+      </div>
+
+      <div class="users-list" id="users">
+        <h1 class="title">users list</h1>
+        <button class="btn btn-info add-btn">add</button>
+        <table class="table table-dark table-striped">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">gender</th>
+              <th scope="col">DOB</th>
+              <th scope="col">Active</th>
+              <th scope="col">Creation</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody class="users-list-body">
+            <tr class="table-success">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr class="table-danger">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr class="table-warning">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr class="table-light">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">39585</th>
+              <td>mohammed awad</td>
+              <td>Mo.nasser.awad@gmail.com</td>
+              <td>male</td>
+              <td>17/06/2000</td>
+              <td>true</td>
+              <td>by mohammed awad at 23/8/2021</td>
+              <td><button class="btn btn-primary">Edit</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="users-edit">
+        <h1 class="title">users edit</h1>
+        <div class="actions-btn m-2 p-2">
+          <button type="button" class="btn btn-primary px-3">save</button>
+          <button type="button" class="btn btn-danger">cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app/main.js"></script>
+    <script src="./app-module/bootstrap/bootstrap.min.js"></script>
+    <script src="./app-module/jquery/jquery.js"></script>
+  </body>
 </html>
